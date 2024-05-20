@@ -1,0 +1,15 @@
+{
+  "name": "nodejs_tutorial",
+  "version": "1.0.0",
+  "description": "nodejs_tutorial",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file=.env server.js"
+  },
+  "author": "Om Darade",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
