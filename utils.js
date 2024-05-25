@@ -1,12 +1,12 @@
-function generateRandomNumber(){
+function generateRandomNumber() {
     return Math.floor(Math.random() * 100) + 1;
 }
 
 function celciusToFahrenheit(celcius){
-    return (celcius * 9) / 6 + 32;
+    return (celcius * 9) / 5 + 32;
 }
 
 module.exports = {
     generateRandomNumber,
-    celciusToFahrenheit,
+    celciusToFahrenheit
 };
