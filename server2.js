@@ -8,7 +8,15 @@ const user = [
 ];
 
 const server = createServer((req, res) => {
-      
+      if(req.url === '/api/users' && req.method === 'GET') {
+        res.setHeader('Content-Type', 'application/json');
+        res.write(JSON.stringify(user));
+        res.end();
+      }else {
+        res.setHeader('Content-Type', 'application/json');
+        res.write(JSON.stringify({Message: 'Route not found'}));
+        res.end();
+      }
 });
 
 server.listen(PORT, () => {
