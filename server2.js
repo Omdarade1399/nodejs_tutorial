@@ -39,7 +39,7 @@ const server = createServer((req, res) => {
         res.statusCode = 404;
         res.write(JSON.stringify({Message: 'Route not found'}));
         res.end();
-}
+       }
     });
 });
 
